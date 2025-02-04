@@ -10,8 +10,27 @@ class HomeViewBody extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Column(
-        children: [CustomAppBar(), CustomListViewItem()],
+        children: [CustomAppBar(), FeaturedListView()],
       ),
+    );
+  }
+}
+
+class FeaturedListView extends StatelessWidget {
+  const FeaturedListView({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      height: MediaQuery.of(context).size.height * 0.3,
+      child: ListView.builder(
+          scrollDirection: Axis.horizontal,
+          itemBuilder: (context, index) {
+            return Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 6.0),
+              child: CustomListViewItem(),
+            );
+          }),
     );
   }
 }
