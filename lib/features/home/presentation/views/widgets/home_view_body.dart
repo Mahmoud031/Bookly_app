@@ -35,15 +35,13 @@ class HomeViewBody extends StatelessWidget {
                 const SizedBox(
                   height: 20,
                 ),
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 30),
+                  child: BestSellerListView(),
+                ),
               ],
             ),
           ),
-          SliverFillRemaining(
-            child: Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 30),
-              child: BestSellerListView(),
-            ),
-          )
         ],
       ),
     );
