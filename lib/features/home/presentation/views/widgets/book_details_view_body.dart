@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/core/utils/styles.dart';
+import 'package:flutter_application_1/core/utils/widgets/custom_button.dart';
 import 'package:flutter_application_1/features/home/presentation/views/widgets/book_rating.dart';
+import 'package:flutter_application_1/features/home/presentation/views/widgets/books_action.dart';
 import 'package:flutter_application_1/features/home/presentation/views/widgets/custom_book_image.dart';
 
 import 'custom_book_details_app_bar.dart';
@@ -42,7 +44,11 @@ class BookDetailsViewBody extends StatelessWidget {
           ),
           BookRating(
             mainAxisAlignment: MainAxisAlignment.center,
-          )
+          ),
+          const SizedBox(
+            height: 37,
+          ),
+          const BooksAction()
         ],
       ),
     );
