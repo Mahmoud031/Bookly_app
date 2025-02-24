@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/constants.dart';
 import 'package:flutter_application_1/core/utils/app_router.dart';
-
-
 import 'package:google_fonts/google_fonts.dart';
 
 void main() {
@@ -11,7 +9,7 @@ void main() {
 
 class BooklyApp extends StatelessWidget {
   const BooklyApp({super.key});
-
+  
   @override
   Widget build(BuildContext context) {
     return MaterialApp.router(
@@ -24,4 +22,3 @@ class BooklyApp extends StatelessWidget {
     );
   }
 }
-
