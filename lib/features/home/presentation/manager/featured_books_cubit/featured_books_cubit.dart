@@ -2,7 +2,6 @@
 import 'package:flutter_application_1/features/home/data/repos/home_repo.dart';
 import 'package:flutter_application_1/features/home/presentation/manager/featured_books_cubit/featured_books_state.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import '';
 class FeaturedBooksCubit extends Cubit<FeaturedBooksState>
  {
   FeaturedBooksCubit(this.homeRepo) : super(FeaturedBooksInitial());
