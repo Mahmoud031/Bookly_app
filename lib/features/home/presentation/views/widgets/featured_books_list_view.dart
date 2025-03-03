@@ -4,7 +4,6 @@ import 'package:flutter_application_1/core/utils/widgets/custom_loading_indicato
 import 'package:flutter_application_1/features/home/presentation/manager/featured_books_cubit/featured_books_cubit.dart';
 import 'package:flutter_application_1/features/home/presentation/manager/featured_books_cubit/featured_books_state.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-
 import 'custom_book_image.dart';
 
 class FeaturedBooksListView extends StatelessWidget {
@@ -26,7 +25,7 @@ class FeaturedBooksListView extends StatelessWidget {
                     padding: const EdgeInsets.symmetric(horizontal: 6.0),
                     child: CustomBookImage(
                       imageUrl:
-                          state.books[index].volumeInfo.imageLinks.thumbnail,
+                          state.books[index].volumeInfo.imageLinks?.thumbnail ?? '',
                     ),
                   );
                 }),
